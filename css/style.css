@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: blue;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: red;
+    color: white;
+
+}
+
+a{
+    color: purple;
+    /*text-decoration: none;
+    transition: 0.5s;
+    margin: 0 10px;
+    line-height: 80px; !* same px as nav height *!*/
+}
+
+a:hover{
+    font-size: 21px;
+
+}
+
+img{
+    height: 100px;
+}
+
+p{
+    margin-bottom: 0;
+    background-color: aqua;
+    float: inside;
+
+
+}
+
+h1{
+    text-align: left;
+    background-color: aqua;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+}
+
+div{
+    background-color: aqua;
+}
+
+
+/*-----------------------------------------------------------*/
+/*BOXES*/
+.box{
+    height: 200px;
+    width: 50%;
+    background-color: orange;
+    margin-bottom: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper{
+    height: 100%;
+    background-color: aqua;
+}
+@media screen and (min-width: 800px) {
+    .box{
+        width: 100%;
+    }
+    .wrapper{
+        background-color: green;
+    }
+
+}
+
+@media screen and (min-device-width: 500px){
+    .wrapper{
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+    }
+}
